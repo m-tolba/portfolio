@@ -110,6 +110,11 @@ body{
     border-radius: 15px;
     cursor: pointer;
 }
+.hidden-button{
+    background-color: #77b255;
+    width:90%;
+    border: 1px solid #77b255;
+}
 
 .project2:hover{
     opacity: 0.7;
