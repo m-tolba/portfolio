@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8" />
     <title>To Mask or Not To Mask?</title>
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Raleway">
@@ -18,12 +17,12 @@
         <a href="about.html">about</a>
         <a class="active" href="index.html">projects</a>
     </div>
-    <!-- introduction -->
+    <!-- wrapper class -->
     <div class="description-wrapper">
+        <!-- back button -->
         <div class="back-button-projects" onclick="window.location.href='index.html'" aria-label="back-button"><i class="material-icons md-48">arrow_back</i><p class="backtext">back to main page</p></div>
-
+        <!-- text and images description of project divided into flex boxes-->
         <div class="description-1">
-            
             <h1 class="publication-title">To Mask or Not To Mask? Balancing Privacy with Visual Confirmation Utility in <br>Activity-Oriented Wearable Cameras</h1>
             <h4 class="publication-authors">Alharbi R, Tolba M, Petito LC, Hester J, Alshurafa N</h4>
         </div>
@@ -31,14 +30,14 @@
             <p>Activity-oriented cameras are used to provide fine-grained visual confirmation of specific hand-related activities in real <br>world settings. Recent studies have shown that bystander privacy concerns limit participant willingness to wear a camera.</p>
         </div>
         <div class="description-3">
-            <img src="images/authenticbehavior.png" class="authentic">
-            <img src="images/capturedbehavior.png" class="captured">
+            <img src="images/authenticbehavior.png" class="authentic" alt="two people eating dinner together with caption 'authentic behavior'">
+            <img src="images/capturedbehavior.png" class="captured" alt="one person eating dinner alone with caption 'captured behavior'">
         </div>
         <div class="description-4">
             <p>Researchers have investigated different obfuscation methods as an approach to enhance bystander <br>privacy; however, these methods may have varying effects on the visual confirmation utility of the image.</p>
         </div>
         <div class="description-5">
-            <img src="images/comparisonvideos.png" class="comparison">
+            <img src="images/comparisonvideos.png" class="comparison" alt="three photos of a person eating captured from fisheye lens pointed toward the head. one is unobfuscated, one is partially ofuscated using blocklist, and one exhibits activity oriented partial obfuscation ">
         </div>
         <div class="description-6">
             <p>We wanted to test the effects of an activity-oriented partial obfuscation approach with varying degrees of obfuscation on bystander privacy and visual confirmation utility.</p>
@@ -61,22 +60,17 @@
             <p>The video footage collected was processed and the study was run as shown in the images below</p>
         </div>
         <div class="description-9">
-            <img src="images/pipeline.png" class="pipeline">
-            <img src="images/studydesign.png" class="design">
+            <img src="images/pipeline.png" class="pipeline" alt="video processing pipeline to go from raw video to obfuscated video">
+            <img src="images/studydesign.png" class="design" alt="study design of 180 participants">
         </div>
         <div class="description-10">
             <p>The results of the study are shown below. For a more detailed description of the study and results, go read the <a href="https://dl.acm.org/doi/10.1145/3351230">full publication!</a></p>
-            <img src="images/weareractivities.png" class="wearer">
-            <img src="images/bystanderactivities.png" class="bystander">
+            <img src="images/weareractivities.png" class="wearer" alt="graph of percentage of correct wearer acivity detected for each obfuscation method over multiple activities ">
+            <img src="images/bystanderactivities.png" class="bystander" alt="graph of percentage of correct bystander acivity detected for each obfuscation method over multiple activities ">
             <div class="conclusion">
-                <img src="images/visualconfirmation1.png" class="visualconfirmation1">
-                <img src="images/visualconfirmation2.png" class="visualconfirmation2">
+                <img src="images/visualconfirmation1.png" class="visualconfirmation1" alt="graph showing the mask method gives best results when no context is needed to identify weearer activity ">
+                <img src="images/visualconfirmation2.png" class="visualconfirmation2" alt="graph showing the blur method gives best results when context is needed to identify weearer activity ">
             </div>
-            <!-- <img src="images/visualconfirmation1.png" class="visualconfirmation1">
-            <img src="images/visualconfirmation2.png" class="visualconfirmation2"> -->
-        </div>
-        <div class="description-11">
-            
         </div>
     </div>
    
