@@ -1,3 +1,4 @@
+// initializing variables
 const email = document.getElementById("mail");
 const firstname = document.getElementById("firstname");
 const lastname = document.getElementById("lastname");
@@ -5,7 +6,7 @@ const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 var letters = /^[A-Za-z]+$/;
 
-
+//event listeners to determine valid inputs for the contact form
 firstname.addEventListener("input", function (event) {
   if (firstname.value != "" && firstname.value.match(letters)){
     firstname.setCustomValidity("");
@@ -58,7 +59,7 @@ email.addEventListener("input", function (event) {
   }
 });
 
-// var invalids = document.getElementsbyId()
+// variables for changing css of invalid inputs
 var css = `input:invalid {
   border: 2px solid red;
 }
@@ -68,9 +69,7 @@ textarea:invalid {
 var style = document.createElement('style');
 
 
-
-
-
+//when form is submitted, either accepts or declines form based on data validity
 function formValidation(){
   if (style.styleSheet) {
     style.styleSheet.cssText = css;
@@ -81,28 +80,9 @@ function formValidation(){
   document.getElementsByTagName('head')[0].appendChild(style);
   
   if (firstname.checkValidity() && lastname.checkValidity() && email.checkValidity() && subject.checkValidity() && message.checkValidity()){
-    alert("Your response has been recorded! I will get back to you shortly");
-    // setTimeout(() => {  alert("Your response has been recorded! I will get back to you shortly"); }, 100)
-   
+    alert("Your response has been recorded! I will get back to you shortly");   
   }else{
     setTimeout(() => {  alert("Please fill out the required fields"); }, 1000)
     
   }
 }
-
-// $(function() {
-//   $('a[href*=#]').on('click', function(e) {
-//     e.preventDefault();
-//     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-//   });
-// });
-
-// $('.js-anchor-link').click(function(e){
-//   e.preventDefault();
-//   var target = $($(this).attr('href'));
-//   if(target.length){
-//     var scrollTo = target.offset().top;
-//     $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
-//   }
-// });
-
